@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="DB_outline.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DjentBot02_IdleBW0000" x="0" y="0" width="269" height="375" frameX="0" frameY="-25" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0001" x="269" y="0" width="265" height="373" frameX="-6" frameY="-27" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0002" x="534" y="0" width="255" height="370" frameX="-24" frameY="-30" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0003" x="789" y="0" width="257" height="383" frameX="-50" frameY="-15" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0004" x="1046" y="0" width="260" height="390" frameX="-66" frameY="-6" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0005" x="1306" y="0" width="261" height="394" frameX="-72" frameY="-2" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0006" x="1567" y="0" width="260" height="393" frameX="-79" frameY="-3" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0007" x="0" y="394" width="267" height="392" frameX="-92" frameY="-5" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0008" x="267" y="394" width="262" height="387" frameX="-112" frameY="-10" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0009" x="529" y="394" width="257" height="375" frameX="-132" frameY="-24" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0010" x="786" y="394" width="247" height="370" frameX="-144" frameY="-33" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0011" x="1033" y="394" width="246" height="371" frameX="-149" frameY="-36" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0012" x="1279" y="394" width="246" height="369" frameX="-145" frameY="-35" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0013" x="1525" y="394" width="254" height="369" frameX="-125" frameY="-34" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0014" x="1779" y="394" width="250" height="370" frameX="-112" frameY="-31" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0015" x="0" y="786" width="272" height="385" frameX="-91" frameY="-14" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0016" x="272" y="786" width="262" height="394" frameX="-79" frameY="-3" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0017" x="534" y="786" width="261" height="397" frameX="-72" frameY="0" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0018" x="795" y="786" width="262" height="395" frameX="-64" frameY="-1" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0019" x="1057" y="786" width="269" height="390" frameX="-39" frameY="-6" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0020" x="1326" y="786" width="263" height="383" frameX="-37" frameY="-13" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0021" x="1589" y="786" width="277" height="377" frameX="-16" frameY="-20" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0022" x="0" y="1183" width="271" height="375" frameX="-4" frameY="-24" frameWidth="395" frameHeight="407"/>
+	<SubTexture name="DjentBot02_IdleBW0023" x="271" y="1183" width="269" height="375" frameX="0" frameY="-25" frameWidth="395" frameHeight="407"/>
+</TextureAtlas>
