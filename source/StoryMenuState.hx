@@ -27,13 +27,7 @@ class StoryMenuState extends MusicBeatState
 	static function weekData():Array<Dynamic>
 	{
 		return [
-			['Tutorial'],
-			['Bopeebo', 'Fresh', 'Dad Battle'],
-			['Spookeez', 'South', "Monster"],
-			['Pico', 'Philly Nice', "Blammed"],
-			['Satin Panties', "High", "Milf"],
-			['Cocoa', 'Eggnog', 'Winter Horrorland'],
-			['Senpai', 'Roses', 'Thorns']
+			['Sideways']
 		];
 	}
 	var curDifficulty:Int = 1;
@@ -41,13 +35,7 @@ class StoryMenuState extends MusicBeatState
 	public static var weekUnlocked:Array<Bool> = [];
 
 	var weekCharacters:Array<Dynamic> = [
-		['', 'bf', 'gf'],
-		['dad', 'bf', 'gf'],
-		['spooky', 'bf', 'gf'],
-		['pico', 'bf', 'gf'],
-		['mom', 'bf', 'gf'],
-		['parents-christmas', 'bf', 'gf'],
-		['senpai', 'bf', 'gf']
+		['djentbot', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = CoolUtil.coolTextFile(Paths.txt('data/weekNames'));
