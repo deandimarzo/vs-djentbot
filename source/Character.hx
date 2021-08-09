@@ -381,6 +381,47 @@ class Character extends FlxSprite
 				loadOffsetFile(curCharacter);
 
 				playAnim('idle');
+                
+                 case 'djentbot':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/DJENTBOT', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'DjentBot01_Idle', 8);
+				animation.addByPrefix('singUP', 'DjentBot01_Up', 24);
+				animation.addByPrefix('singRIGHT', 'DjentBot01_Right', 24);
+				animation.addByPrefix('singDOWN', 'DjentBot01_Down', 24);
+				animation.addByPrefix('singLEFT', 'DjentBot01_Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 68, 52);
+				addOffset("singRIGHT", -95, -41);
+				addOffset("singLEFT", 127, -28);
+				addOffset("singDOWN", 10, -3);
+
+                
+                
+				playAnim('idle');
+                
+                case 'djentbot-angry':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/DJENTBOT-ANGRY', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'DjentBot02_Idle', 24);
+				animation.addByPrefix('singUP', 'DjentBot02_Up', 24);
+				animation.addByPrefix('singRIGHT', 'DjentBot02_Right', 24);
+				animation.addByPrefix('singDOWN', 'DjentBot02_Down', 24);
+				animation.addByPrefix('singLEFT', 'DjentBot02_Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -59, -14);
+				addOffset("singRIGHT", -114, -95);
+				addOffset("singLEFT", 51, -18);
+				addOffset("singDOWN", 80, -147);
+
+                
+                
+				playAnim('idle');
+                
 		}
 
 		dance();

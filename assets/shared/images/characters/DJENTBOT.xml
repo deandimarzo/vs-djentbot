@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="DJENTBOT.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DjentBot01_Down0000" x="0" y="0" width="291" height="374"/>
+	<SubTexture name="DjentBot01_Down0001" x="291" y="0" width="291" height="374"/>
+	<SubTexture name="DjentBot01_Down0002" x="582" y="0" width="291" height="374"/>
+	<SubTexture name="DjentBot01_Down0003" x="873" y="0" width="291" height="374"/>
+	<SubTexture name="DjentBot01_Down0004" x="0" y="0" width="291" height="374"/>
+	<SubTexture name="DjentBot01_Idle0000" x="1164" y="0" width="378" height="382"/>
+	<SubTexture name="DjentBot01_Idle0001" x="1542" y="0" width="378" height="382"/>
+	<SubTexture name="DjentBot01_Idle0002" x="0" y="382" width="378" height="382"/>
+	<SubTexture name="DjentBot01_Idle0003" x="378" y="382" width="378" height="382"/>
+	<SubTexture name="DjentBot01_Idle0004" x="756" y="382" width="378" height="382"/>
+	<SubTexture name="DjentBot01_Idle0005" x="1134" y="382" width="378" height="382"/>
+	<SubTexture name="DjentBot01_Idle0006" x="1512" y="382" width="378" height="382"/>
+	<SubTexture name="DjentBot01_Idle0007" x="0" y="764" width="378" height="382"/>
+	<SubTexture name="DjentBot01_Left0000" x="378" y="764" width="378" height="357"/>
+	<SubTexture name="DjentBot01_Left0001" x="756" y="764" width="378" height="357"/>
+	<SubTexture name="DjentBot01_Left0002" x="1134" y="764" width="378" height="357"/>
+	<SubTexture name="DjentBot01_Left0003" x="1512" y="764" width="378" height="357"/>
+	<SubTexture name="DjentBot01_Left0004" x="378" y="764" width="378" height="357"/>
+	<SubTexture name="DjentBot01_Right0000" x="0" y="1146" width="262" height="338"/>
+	<SubTexture name="DjentBot01_Right0001" x="262" y="1146" width="262" height="338"/>
+	<SubTexture name="DjentBot01_Right0002" x="524" y="1146" width="262" height="338"/>
+	<SubTexture name="DjentBot01_Right0003" x="786" y="1146" width="262" height="338"/>
+	<SubTexture name="DjentBot01_Right0004" x="0" y="1146" width="262" height="338"/>
+	<SubTexture name="DjentBot01_Up0000" x="1048" y="1146" width="442" height="433"/>
+	<SubTexture name="DjentBot01_Up0001" x="1490" y="1146" width="442" height="433"/>
+	<SubTexture name="DjentBot01_Up0002" x="0" y="1579" width="442" height="433"/>
+	<SubTexture name="DjentBot01_Up0003" x="442" y="1579" width="442" height="433"/>
+	<SubTexture name="DjentBot01_Up0004" x="884" y="1579" width="442" height="433"/>
+</TextureAtlas>
