@@ -368,7 +368,13 @@ class StoryMenuState extends MusicBeatState
 			PlayState.campaignScore = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
+                if (curWeek == 0 ) {
+                    var video:MP4Handler = new MP4Handler();
+                    video.playMP4(Paths.video('nameofyourvideohere'), new PlayState()); 
+                } else {
+                
 				LoadingState.loadAndSwitchState(new PlayState(), true);
+                }
 			});
 		}
 	}
