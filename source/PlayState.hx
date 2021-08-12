@@ -922,6 +922,35 @@ class PlayState extends MusicBeatState
 						
 
 				}
+       case 'djent-studio-2':
+				{
+                    
+					defaultCamZoom = 1;
+						curStage = 'djent-studio';
+                    var stageCurtains:FlxSprite = new FlxSprite(-146, 187).loadGraphic(Paths.image('djent-studio-booth'));
+				
+						stageCurtains.antialiasing = true;
+						stageCurtains.scrollFactor.set(0.8, 0.8);
+						stageCurtains.active = false;
+	
+						add(stageCurtains);
+                
+                    
+						var bg:FlxSprite = new FlxSprite(-600, 0).loadGraphic(Paths.image('djent-studio-broken'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+	
+						    var stageFront:FlxSprite = new FlxSprite(-280, 0).loadGraphic(Paths.image('djent-studio-lights'));
+						stageFront.antialiasing = true;
+						stageFront.scrollFactor.set(1.1, 1.1);
+						stageFront.active = false;
+						add(stageFront);
+	
+						
+
+				}
     
     
 				default:
