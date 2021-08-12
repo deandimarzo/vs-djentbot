@@ -370,7 +370,7 @@ class StoryMenuState extends MusicBeatState
 			{
                 if (curWeek == 0 ) {
                     var video:MP4Handler = new MP4Handler();
-                    video.playMP4(Paths.video('nameofyourvideohere'), new PlayState()); 
+                    video.playMP4(Paths.video('DB_Intro_Small'), new PlayState()); 
                 } else {
                 
 				LoadingState.loadAndSwitchState(new PlayState(), true);
