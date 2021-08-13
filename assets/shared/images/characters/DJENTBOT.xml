@@ -3,31 +3,47 @@
 	<!-- Created with Adobe Animate version 21.0.7.42652 -->
 	<!-- http://www.adobe.com/products/animate.html -->
 	<SubTexture name="DjentBot01_Down0000" x="0" y="0" width="291" height="374"/>
-	<SubTexture name="DjentBot01_Down0001" x="291" y="0" width="291" height="374"/>
-	<SubTexture name="DjentBot01_Down0002" x="582" y="0" width="291" height="374"/>
-	<SubTexture name="DjentBot01_Down0003" x="873" y="0" width="291" height="374"/>
+	<SubTexture name="DjentBot01_Down0001" x="291" y="0" width="285" height="367" frameX="-4" frameY="-7" frameWidth="291" frameHeight="374"/>
+	<SubTexture name="DjentBot01_Down0002" x="576" y="0" width="278" height="359" frameX="-8" frameY="-15" frameWidth="291" frameHeight="374"/>
+	<SubTexture name="DjentBot01_Down0003" x="854" y="0" width="284" height="367" frameX="-4" frameY="-7" frameWidth="291" frameHeight="374"/>
 	<SubTexture name="DjentBot01_Down0004" x="0" y="0" width="291" height="374"/>
-	<SubTexture name="DjentBot01_Idle0000" x="1164" y="0" width="378" height="382"/>
-	<SubTexture name="DjentBot01_Idle0001" x="1542" y="0" width="378" height="382"/>
-	<SubTexture name="DjentBot01_Idle0002" x="0" y="382" width="378" height="382"/>
-	<SubTexture name="DjentBot01_Idle0003" x="378" y="382" width="378" height="382"/>
-	<SubTexture name="DjentBot01_Idle0004" x="756" y="382" width="378" height="382"/>
-	<SubTexture name="DjentBot01_Idle0005" x="1134" y="382" width="378" height="382"/>
-	<SubTexture name="DjentBot01_Idle0006" x="1512" y="382" width="378" height="382"/>
-	<SubTexture name="DjentBot01_Idle0007" x="0" y="764" width="378" height="382"/>
-	<SubTexture name="DjentBot01_Left0000" x="378" y="764" width="378" height="357"/>
-	<SubTexture name="DjentBot01_Left0001" x="756" y="764" width="378" height="357"/>
-	<SubTexture name="DjentBot01_Left0002" x="1134" y="764" width="378" height="357"/>
-	<SubTexture name="DjentBot01_Left0003" x="1512" y="764" width="378" height="357"/>
-	<SubTexture name="DjentBot01_Left0004" x="378" y="764" width="378" height="357"/>
-	<SubTexture name="DjentBot01_Right0000" x="0" y="1146" width="262" height="338"/>
-	<SubTexture name="DjentBot01_Right0001" x="262" y="1146" width="262" height="338"/>
-	<SubTexture name="DjentBot01_Right0002" x="524" y="1146" width="262" height="338"/>
-	<SubTexture name="DjentBot01_Right0003" x="786" y="1146" width="262" height="338"/>
-	<SubTexture name="DjentBot01_Right0004" x="0" y="1146" width="262" height="338"/>
-	<SubTexture name="DjentBot01_Up0000" x="1048" y="1146" width="442" height="433"/>
-	<SubTexture name="DjentBot01_Up0001" x="1490" y="1146" width="442" height="433"/>
-	<SubTexture name="DjentBot01_Up0002" x="0" y="1579" width="442" height="433"/>
-	<SubTexture name="DjentBot01_Up0003" x="442" y="1579" width="442" height="433"/>
-	<SubTexture name="DjentBot01_Up0004" x="884" y="1579" width="442" height="433"/>
+	<SubTexture name="DjentBot01_Idle0000" x="1138" y="0" width="323" height="329" frameX="0" frameY="-44" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0001" x="1461" y="0" width="322" height="331" frameX="-3" frameY="-42" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0002" x="1783" y="0" width="316" height="335" frameX="-13" frameY="-37" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0003" x="2099" y="0" width="303" height="343" frameX="-30" frameY="-29" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0004" x="2402" y="0" width="279" height="352" frameX="-54" frameY="-19" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0005" x="2681" y="0" width="257" height="361" frameX="-87" frameY="-10" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0006" x="2938" y="0" width="241" height="368" frameX="-114" frameY="-3" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0007" x="3179" y="0" width="219" height="371" frameX="-125" frameY="0" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0008" x="3398" y="0" width="184" height="371" frameX="-129" frameY="0" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0009" x="3582" y="0" width="220" height="370" frameX="-105" frameY="-1" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0010" x="3802" y="0" width="244" height="370" frameX="-88" frameY="-2" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0011" x="0" y="374" width="252" height="369" frameX="-83" frameY="-3" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0012" x="252" y="374" width="251" height="370" frameX="-82" frameY="-2" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0013" x="503" y="374" width="247" height="370" frameX="-80" frameY="-1" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0014" x="750" y="374" width="241" height="371" frameX="-76" frameY="0" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0015" x="991" y="374" width="230" height="371" frameX="-72" frameY="0" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0016" x="1221" y="374" width="213" height="370" frameX="-70" frameY="-1" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0017" x="1434" y="374" width="196" height="365" frameX="-69" frameY="-6" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0018" x="1630" y="374" width="190" height="357" frameX="-72" frameY="-14" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0019" x="1820" y="374" width="227" height="349" frameX="-45" frameY="-23" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0020" x="2047" y="374" width="282" height="341" frameX="-25" frameY="-31" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0021" x="2329" y="374" width="313" height="335" frameX="-11" frameY="-38" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0022" x="2642" y="374" width="322" height="330" frameX="-3" frameY="-43" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Idle0023" x="1138" y="0" width="323" height="329" frameX="0" frameY="-44" frameWidth="355" frameHeight="373"/>
+	<SubTexture name="DjentBot01_Left0000" x="2964" y="374" width="315" height="355" frameX="-40" frameY="0" frameWidth="369" frameHeight="357"/>
+	<SubTexture name="DjentBot01_Left0001" x="3279" y="374" width="344" height="347" frameX="-18" frameY="-5" frameWidth="369" frameHeight="357"/>
+	<SubTexture name="DjentBot01_Left0002" x="3623" y="374" width="369" height="344" frameX="0" frameY="-11" frameWidth="369" frameHeight="357"/>
+	<SubTexture name="DjentBot01_Left0003" x="0" y="745" width="344" height="352" frameX="-18" frameY="-5" frameWidth="369" frameHeight="357"/>
+	<SubTexture name="DjentBot01_Left0004" x="2964" y="374" width="315" height="355" frameX="-40" frameY="0" frameWidth="369" frameHeight="357"/>
+	<SubTexture name="DjentBot01_Right0000" x="344" y="745" width="258" height="334" frameX="-4" frameY="-2" frameWidth="262" frameHeight="338"/>
+	<SubTexture name="DjentBot01_Right0001" x="602" y="745" width="257" height="334" frameX="0" frameY="-1" frameWidth="262" frameHeight="338"/>
+	<SubTexture name="DjentBot01_Right0002" x="859" y="745" width="247" height="336" frameX="-4" frameY="0" frameWidth="262" frameHeight="338"/>
+	<SubTexture name="DjentBot01_Right0003" x="1106" y="745" width="249" height="336" frameX="-7" frameY="-2" frameWidth="262" frameHeight="338"/>
+	<SubTexture name="DjentBot01_Right0004" x="1355" y="745" width="258" height="332" frameX="-4" frameY="-4" frameWidth="262" frameHeight="338"/>
+	<SubTexture name="DjentBot01_Up0000" x="1613" y="745" width="391" height="433" frameX="-17" frameY="0" frameWidth="408" frameHeight="433"/>
+	<SubTexture name="DjentBot01_Up0001" x="2004" y="745" width="393" height="431" frameX="-8" frameY="-2" frameWidth="408" frameHeight="433"/>
+	<SubTexture name="DjentBot01_Up0002" x="2397" y="745" width="394" height="430" frameX="0" frameY="-3" frameWidth="408" frameHeight="433"/>
+	<SubTexture name="DjentBot01_Up0003" x="2791" y="745" width="393" height="431" frameX="-8" frameY="-2" frameWidth="408" frameHeight="433"/>
+	<SubTexture name="DjentBot01_Up0004" x="1613" y="745" width="391" height="433" frameX="-17" frameY="0" frameWidth="408" frameHeight="433"/>
 </TextureAtlas>

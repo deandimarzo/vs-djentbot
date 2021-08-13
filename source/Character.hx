@@ -386,7 +386,7 @@ class Character extends FlxSprite
 				// DAD ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('characters/DJENTBOT', 'shared');
 				frames = tex;
-				animation.addByPrefix('idle', 'DjentBot01_Idle', 8);
+				animation.addByPrefix('idle', 'DjentBot01_Idle', 24);
 				animation.addByPrefix('singUP', 'DjentBot01_Up', 24);
 				animation.addByPrefix('singRIGHT', 'DjentBot01_Right', 24);
 				animation.addByPrefix('singDOWN', 'DjentBot01_Down', 24);
