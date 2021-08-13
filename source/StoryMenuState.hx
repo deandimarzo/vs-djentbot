@@ -41,6 +41,7 @@ class StoryMenuState extends MusicBeatState
 	var weekNames:Array<String> = CoolUtil.coolTextFile(Paths.txt('data/weekNames'));
 
 	var txtWeekTitle:FlxText;
+    
 
 	var curWeek:Int = 0;
 
@@ -56,6 +57,9 @@ class StoryMenuState extends MusicBeatState
 	var leftArrow:FlxSprite;
 	var rightArrow:FlxSprite;
 
+    var isCutscene:Bool = false;
+    
+    
 	function unlockWeeks():Array<Bool>
 	{
 		var weeks:Array<Bool> = [];
@@ -368,12 +372,14 @@ class StoryMenuState extends MusicBeatState
 			PlayState.campaignScore = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
-                if (curWeek == 0 ) {
-                    var video:MP4Handler = new MP4Handler();
+                var video:MP4Handler = new MP4Handler();
+                if (curWeek == 0 && !isCutscene) {
+                    
                     video.playMP4(Paths.video('DB_Intro_Small'), new PlayState()); 
+                    isCutscene = true;
                 } else {
-                
-				LoadingState.loadAndSwitchState(new PlayState(), true);
+                        video.onVLCComplete();
+				    LoadingState.loadAndSwitchState(new PlayState(), true);
                 }
 			});
 		}

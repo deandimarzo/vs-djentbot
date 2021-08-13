@@ -16,7 +16,7 @@ class MP4Handler
 	public static var video:Video;
 	public static var netStream:NetStream;
 	public static var finishCallback:FlxState;
-    var mp4IsPlaying:Bool;
+
 
 
 	#if desktop
@@ -25,7 +25,6 @@ class MP4Handler
 
 	public function new()
 	{
-        mp4IsPlaying = false;
 		FlxG.autoPause = false;
 
 		if (FlxG.sound.music != null)
@@ -37,9 +36,8 @@ class MP4Handler
 	public function playMP4(path:String, callback:FlxState, ?repeat:Bool = false, ?isWindow:Bool = false, ?isFullscreen:Bool = false):Void
 	{
 		finishCallback = callback;
-        
-        if (mp4IsPlaying == false) {
-            
+
+
         
                 #if desktop
 		vlcBitmap = new VlcBitmap();
@@ -55,7 +53,9 @@ class MP4Handler
 		vlcBitmap.inWindow = isWindow;
 		vlcBitmap.fullscreen = isFullscreen;
 
+
 		FlxG.addChildBelowMouse(vlcBitmap);
+            
 		vlcBitmap.play(checkFile(path));
                 #elseif html5
                 video = new Video();
@@ -72,12 +72,9 @@ class MP4Handler
 
 		nc.addEventListener("netStatus", netConnection_onNetStatus);
         
-        mp4IsPlaying = true;
 		netStream.play(videoPath);
                 #end
-        } else {
-           onVLCComplete();
-        }
+   
     
 	}
 
@@ -101,10 +98,9 @@ class MP4Handler
 		trace("video loaded!");
 	}
 
-	function onVLCComplete()
+	public function onVLCComplete()
 	{
 		vlcBitmap.stop();
-        mp4IsPlaying = false;
 		// Clean player, just in case!
 		vlcBitmap.dispose();
 
