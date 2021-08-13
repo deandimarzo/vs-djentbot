@@ -896,9 +896,9 @@ class PlayState extends MusicBeatState
     case 'djent-studio':
 				{
                     
-					defaultCamZoom = 1;
+					defaultCamZoom = 0.8;
 						curStage = 'djent-studio';
-                    var stageCurtains:FlxSprite = new FlxSprite(-146, 187).loadGraphic(Paths.image('djent-studio-booth'));
+                    var stageCurtains:FlxSprite = new FlxSprite(120, 120).loadGraphic(Paths.image('djent-studio-booth'));
 				
 						stageCurtains.antialiasing = true;
 						stageCurtains.scrollFactor.set(0.8, 0.8);
@@ -907,7 +907,7 @@ class PlayState extends MusicBeatState
 						add(stageCurtains);
                 
                     
-						var bg:FlxSprite = new FlxSprite(-600, 0).loadGraphic(Paths.image('djent-studio-base'));
+						var bg:FlxSprite = new FlxSprite(-600, -217).loadGraphic(Paths.image('djent-studio-base'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
 						bg.active = false;
@@ -925,9 +925,9 @@ class PlayState extends MusicBeatState
        case 'djent-studio-2':
 				{
                     
-					defaultCamZoom = 1;
-						curStage = 'djent-studio';
-                    var stageCurtains:FlxSprite = new FlxSprite(-146, 187).loadGraphic(Paths.image('djent-studio-booth'));
+				defaultCamZoom = 0.8;
+						curStage = 'djent-studio-2';
+                    var stageCurtains:FlxSprite = new FlxSprite(120, 120).loadGraphic(Paths.image('djent-studio-booth'));
 				
 						stageCurtains.antialiasing = true;
 						stageCurtains.scrollFactor.set(0.8, 0.8);
@@ -936,7 +936,7 @@ class PlayState extends MusicBeatState
 						add(stageCurtains);
                 
                     
-						var bg:FlxSprite = new FlxSprite(-600, 0).loadGraphic(Paths.image('djent-studio-broken'));
+						var bg:FlxSprite = new FlxSprite(-600, -217).loadGraphic(Paths.image('djent-studio-broken'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
 						bg.active = false;
@@ -1061,7 +1061,7 @@ class PlayState extends MusicBeatState
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
             case 'djentbot':
 				dad.y += 360;
-				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
+				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y-100);
             case 'djentbot-angry':
 				dad.y += 360;
 				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
@@ -1118,6 +1118,12 @@ class PlayState extends MusicBeatState
 				boyfriend.y += 220;
 				gf.x += 180;
 				gf.y += 300;
+            case 'djent-studio':
+				gf.x += 400;
+				gf.y -= 20;
+            case 'djent-studio-2':
+				gf.x += 400;
+				gf.y -= 20;
 		}
 
 		if (!PlayStateChangeables.Optimize)
