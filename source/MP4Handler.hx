@@ -16,6 +16,8 @@ class MP4Handler
 	public static var video:Video;
 	public static var netStream:NetStream;
 	public static var finishCallback:FlxState;
+    var mp4IsPlaying:Bool;
+
 
 	#if desktop
 	public static var vlcBitmap:VlcBitmap;
@@ -23,6 +25,7 @@ class MP4Handler
 
 	public function new()
 	{
+        mp4IsPlaying = false;
 		FlxG.autoPause = false;
 
 		if (FlxG.sound.music != null)
@@ -34,13 +37,16 @@ class MP4Handler
 	public function playMP4(path:String, callback:FlxState, ?repeat:Bool = false, ?isWindow:Bool = false, ?isFullscreen:Bool = false):Void
 	{
 		finishCallback = callback;
-
+        
+        if (mp4IsPlaying == false) {
+            
+        
                 #if desktop
 		vlcBitmap = new VlcBitmap();
 		vlcBitmap.onVideoReady = onVLCVideoReady;
 		vlcBitmap.onComplete = onVLCComplete;
 		vlcBitmap.volume = FlxG.sound.volume;
-
+        
 		if (repeat)
 			vlcBitmap.repeat = -1;
 		else
@@ -65,9 +71,13 @@ class MP4Handler
 		netStream.client = {onMetaData: client_onMetaData};
 
 		nc.addEventListener("netStatus", netConnection_onNetStatus);
-
+        
+        mp4IsPlaying = true;
 		netStream.play(videoPath);
                 #end
+        } else {
+           onVLCComplete();
+        }
     
 	}
 
@@ -94,7 +104,7 @@ class MP4Handler
 	function onVLCComplete()
 	{
 		vlcBitmap.stop();
-
+        mp4IsPlaying = false;
 		// Clean player, just in case!
 		vlcBitmap.dispose();
 
