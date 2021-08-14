@@ -3395,11 +3395,15 @@ class PlayState extends MusicBeatState
 				{
 					transIn = FlxTransitionableState.defaultTransIn;
 					transOut = FlxTransitionableState.defaultTransOut;
+                    
+                    
 
 					paused = true;
-
 					FlxG.sound.music.stop();
 					vocals.stop();
+                    
+                
+                    
 					if (FlxG.save.data.scoreScreen)
 					{
 						openSubState(new ResultsScreen());
@@ -3410,11 +3414,20 @@ class PlayState extends MusicBeatState
 					}
 					else
 					{
-						FlxG.sound.playMusic(Paths.music('freakyMenu'));
-						Conductor.changeBPM(102);
-						FlxG.switchState(new StoryMenuState());
+                        
+                        // Insert Post-song video here.
+                        if (SONG.song.toLowerCase() == 'sideways') {
+                            video.playMP4(Paths.video('MidScene_1'), new PlayState()); 
+                        } else {
+                            FlxG.sound.playMusic(Paths.music('freakyMenu'));
+                            Conductor.changeBPM(102);
+                            FlxG.switchState(new StoryMenuState());
+                        }
 					}
 
+                    
+                    
+                    
 					#if windows
 					if (luaModchart != null)
 					{
