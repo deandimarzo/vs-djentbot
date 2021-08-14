@@ -57,28 +57,29 @@ class MP4Handler
 		FlxG.addChildBelowMouse(vlcBitmap);
             
 		vlcBitmap.play(checkFile(path));
-                #elseif html5
-                video = new Video();
-		video.x = 0;
-		video.y = 0;
-
-		FlxG.addChildBelowMouse(video);
-
-		var nc = new NetConnection();
-		nc.connect(null);
-
-		netStream = new NetStream(nc);
-		netStream.client = {onMetaData: client_onMetaData};
-
-		nc.addEventListener("netStatus", netConnection_onNetStatus);
         
-		netStream.play(videoPath);
-                #end
+        #elseif html5
+            video = new Video();
+            video.x = 0;
+            video.y = 0;
+
+            FlxG.addChildBelowMouse(video);
+
+            var nc = new NetConnection();
+            nc.connect(null);
+
+            netStream = new NetStream(nc);
+            netStream.client = {onMetaData: client_onMetaData};
+
+            nc.addEventListener("netStatus", netConnection_onNetStatus);
+
+            netStream.play(videoPath);
+        #end
    
     
 	}
 
-        #if desktop
+    #if desktop
 	function checkFile(fileName:String):String
 	{
 		var pDir = "";
@@ -113,7 +114,7 @@ class MP4Handler
 
 		if (finishCallback != null)
 		{
-			FlxG.switchState(finishCallback);
+			LoadingState.loadAndSwitchState(finishCallback);
 		}
 	}
 	#end
@@ -147,9 +148,10 @@ class MP4Handler
 
 		if (finishCallback != null)
 		{
-			FlxG.switchState(finishCallback);
+			LoadingState.loadAndSwitchState(finishCallback);
 		}
 		else
+            trace("I think this is where it goes wrong");
 			FlxG.switchState(new MainMenuState());
 	}
 }

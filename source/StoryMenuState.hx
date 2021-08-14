@@ -370,19 +370,23 @@ class StoryMenuState extends MusicBeatState
 			PlayState.SONG = Song.loadFromJson(poop, PlayState.storyPlaylist[0]);
 			PlayState.storyWeek = curWeek;
 			PlayState.campaignScore = 0;
-			new FlxTimer().start(1, function(tmr:FlxTimer)
-			{
-                var video:MP4Handler = new MP4Handler();
+         
+            var video:MP4Handler = new MP4Handler();
                 if (curWeek == 0 && !isCutscene) {
                     
                     video.playMP4(Paths.video('DB_Intro_Small'), new PlayState()); 
                     isCutscene = true;
                 } else {
-                        video.onVLCComplete();
+
+			new FlxTimer().start(1, function(tmr:FlxTimer)
+			{
+              
+                   video.onVLCComplete();
 				    LoadingState.loadAndSwitchState(new PlayState(), true);
-                }
+                
 			});
-		}
+            }
+            }
 	}
 
 	function changeDifficulty(change:Int = 0):Void
