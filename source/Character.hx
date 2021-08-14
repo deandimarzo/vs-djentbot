@@ -393,10 +393,10 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFT', 'DjentBot01_Left', 24);
 
 				addOffset('idle');
-				addOffset("singUP", 68, 52);
-				addOffset("singRIGHT", -95, -41);
-				addOffset("singLEFT", 127, -28);
-				addOffset("singDOWN", 10, -3);
+				addOffset("singUP", -28, 5);
+				addOffset("singRIGHT", -143, -48);
+				addOffset("singLEFT", 83, -27);
+				addOffset("singDOWN", -31, 3);
 
                 
                 
