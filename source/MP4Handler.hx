@@ -41,7 +41,12 @@ class MP4Handler
         
                 #if desktop
 		vlcBitmap = new VlcBitmap();
-		vlcBitmap.onVideoReady = onVLCVideoReady;
+        vlcBitmap.set_height(FlxG.stage.stageHeight);
+        vlcBitmap.set_width(FlxG.stage.stageHeight * (16 / 9));
+        trace("Setting width to " + FlxG.stage.stageHeight * (16 / 9));
+                trace("Setting height to " + FlxG.stage.stageHeight);
+        
+        vlcBitmap.onVideoReady = onVLCVideoReady;
 		vlcBitmap.onComplete = onVLCComplete;
 		vlcBitmap.volume = FlxG.sound.volume;
         
@@ -52,6 +57,9 @@ class MP4Handler
 
 		vlcBitmap.inWindow = isWindow;
 		vlcBitmap.fullscreen = isFullscreen;
+        
+
+        
 
 
 		FlxG.addChildBelowMouse(vlcBitmap);
