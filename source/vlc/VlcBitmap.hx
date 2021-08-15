@@ -57,7 +57,7 @@ class VlcBitmap extends Bitmap
 	public var initComplete:Bool;
 	public var fullscreen:Bool;
 
-	public var volume(default, set):Float = 1;
+	public var volume(default, set):Float = 0.8;
 
 	public var isDisposed:Bool;
 	public var isPlaying:Bool;

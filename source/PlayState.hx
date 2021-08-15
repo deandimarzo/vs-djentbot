@@ -1119,10 +1119,10 @@ class PlayState extends MusicBeatState
 				gf.x += 180;
 				gf.y += 300;
             case 'djent-studio':
-				gf.x += 400;
+				gf.x += 500;
 				gf.y -= 20;
             case 'djent-studio-2':
-				gf.x += 400;
+				gf.x += 500;
 				gf.y -= 20;
 		}
 
@@ -1254,7 +1254,7 @@ class PlayState extends MusicBeatState
 			SONG.song
 			+ " - "
 			+ CoolUtil.difficultyFromInt(storyDifficulty)
-			+ (Main.watermarks ? " | KE " + MainMenuState.kadeEngineVer : ""), 16);
+			+ (" | DB 1.0.0"), 16);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
