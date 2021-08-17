@@ -1065,6 +1065,9 @@ class PlayState extends MusicBeatState
             case 'djentbot-angry':
 				dad.y += 360;
 				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
+             case 'djentbeast':
+				dad.y += 360;
+				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y-100);
 			case 'senpai-angry':
 				dad.x += 150;
 				dad.y += 360;

@@ -422,6 +422,26 @@ class Character extends FlxSprite
                 
 				playAnim('idle');
                 
+                 case 'djentbeast':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/DJENTBEAST', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'IDLE', 24);
+				animation.addByPrefix('singUP', 'UP', 24);
+				animation.addByPrefix('singRIGHT', 'RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'DOWN', 24);
+				animation.addByPrefix('singLEFT', 'LEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 1, 4);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singLEFT", 3, 0);
+				addOffset("singDOWN", 1, -6);
+
+                
+                
+				playAnim('idle');
+                
 		}
 
 		dance();
