@@ -442,6 +442,25 @@ class Character extends FlxSprite
                 
 				playAnim('idle');
                 
+              case 'perfectdjent':
+			tex = Paths.getSparrowAtlas('characters/PERFECTDJENT', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'DB4_Idle', 24);
+				animation.addByPrefix('singUP', 'DB4_Up', 24);
+				animation.addByPrefix('singRIGHT', 'DB4_Right', 24);
+				animation.addByPrefix('singDOWN', 'DB4_Down', 24);
+				animation.addByPrefix('singLEFT', 'DB4_Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -54, 33);
+				addOffset("singRIGHT", 4, -3);
+				addOffset("singLEFT", 3, -16);
+				addOffset("singDOWN", -10, -24);
+
+                
+                
+				playAnim('idle');
+                
 		}
 
 		dance();
