@@ -19,3 +19,4 @@ djentbot
 djentbot-angry
 djentbeast
 perfectdjent
+bf-tiny

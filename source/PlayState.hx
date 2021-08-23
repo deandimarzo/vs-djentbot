@@ -988,6 +988,11 @@ class PlayState extends MusicBeatState
 						city_foreground.active = false;
 				        add(city_foreground);
                 
+                    var city_pillar:FlxSprite = new FlxSprite(-600, -220).loadGraphic(Paths.image('city-pillar'));
+                        city_pillar.antialiasing = true;
+						city_pillar.scrollFactor.set(1, 1);
+						city_pillar.active = false;
+				        add(city_pillar);
                 
                     	
 
