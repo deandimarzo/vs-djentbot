@@ -953,6 +953,48 @@ class PlayState extends MusicBeatState
 				}
     
     
+     case 'djent-city':
+				{
+                    
+				defaultCamZoom = 0.6;
+						curStage = 'djent-city';
+                    var city_sky:FlxSprite = new FlxSprite(-600, -220).loadGraphic(Paths.image('city-sky'));
+                        city_sky.antialiasing = true;
+						city_sky.scrollFactor.set(0.1, 0.1);
+						city_sky.active = false;
+				        add(city_sky);
+                    
+                    var city_far:FlxSprite = new FlxSprite(-600, -220).loadGraphic(Paths.image('city-far'));
+                        city_far.antialiasing = true;
+						city_far.scrollFactor.set(0.3, 0.3);
+						city_far.active = false;
+				        add(city_far);
+                    
+                    var city_secondary:FlxSprite = new FlxSprite(-600, -220).loadGraphic(Paths.image('city-secondary'));
+                        city_secondary.antialiasing = true;
+						city_secondary.scrollFactor.set(0.5, 0.5);
+						city_secondary.active = false;
+				        add(city_secondary);
+                    
+                    var city_main:FlxSprite = new FlxSprite(-600, -220).loadGraphic(Paths.image('city-main'));
+                        city_main.antialiasing = true;
+						city_main.scrollFactor.set(0.6, 0.6);
+						city_main.active = false;
+				        add(city_main);
+                    
+                    var city_foreground:FlxSprite = new FlxSprite(-600, -220).loadGraphic(Paths.image('city-foreground'));
+                        city_foreground.antialiasing = true;
+						city_foreground.scrollFactor.set(1.1, 1.1);
+						city_foreground.active = false;
+				        add(city_foreground);
+                
+                
+                    	
+
+						
+
+				}
+    
 				default:
 					{
 						defaultCamZoom = 0.9;
@@ -1134,6 +1176,10 @@ class PlayState extends MusicBeatState
             case 'djent-studio-2':
 				gf.x += 500;
 				gf.y -= 20;
+             case 'djent-city':
+				dad.x -= 300;
+				dad.y -= 20;
+                gf.y += 1000;
 		}
 
 		if (!PlayStateChangeables.Optimize)

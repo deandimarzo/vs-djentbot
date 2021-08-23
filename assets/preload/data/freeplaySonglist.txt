@@ -1,2 +1,3 @@
 Sideways:djentbot:1
 Does It:djentbot:1
+Crazy:djentbot:1
