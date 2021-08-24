@@ -965,7 +965,7 @@ class PlayState extends MusicBeatState
 						city_sky.active = false;
 				        add(city_sky);
                     
-                    var city_far:FlxSprite = new FlxSprite(-680, -120).loadGraphic(Paths.image('city-far'));
+                    var city_far:FlxSprite = new FlxSprite(-680, -220).loadGraphic(Paths.image('city-far'));
                         city_far.antialiasing = true;
                         city_far.setGraphicSize(Std.int(city_far.width * 0.9));
 						city_far.scrollFactor.set(0.2, 0.2);
@@ -986,10 +986,10 @@ class PlayState extends MusicBeatState
 						city_main.active = false;
 				        add(city_main);
                     
-                    var city_foreground:FlxSprite = new FlxSprite(-1200, -20).loadGraphic(Paths.image('city-foreground'));
+                    var city_foreground:FlxSprite = new FlxSprite(-760, -220).loadGraphic(Paths.image('city-foreground'));
                         city_foreground.antialiasing = true;
-                        city_foreground.setGraphicSize(Std.int(city_foreground.width * 0.8));
-						city_foreground.scrollFactor.set(1.1, 1.1);
+                        city_foreground.setGraphicSize(Std.int(city_foreground.width * 0.92));
+						city_foreground.scrollFactor.set(0.6, 0.6);
 						city_foreground.active = false;
 				        add(city_foreground);
                 
@@ -999,8 +999,62 @@ class PlayState extends MusicBeatState
 						city_pillar.scrollFactor.set(1, 1);
 						city_pillar.active = false;
 				        add(city_pillar);
-                
+                }
                     	
+           case 'djent-city-ruined':
+				{
+                    
+				defaultCamZoom = 0.7;
+						curStage = 'djent-city-ruined';
+                    var city_sky:FlxSprite = new FlxSprite(-680,-60).loadGraphic(Paths.image('city-sky'));
+                        city_sky.antialiasing = true;
+                        city_sky.setGraphicSize(Std.int(city_sky.width * 0.9));
+						city_sky.scrollFactor.set(0.1, 0.1);
+						city_sky.active = false;
+				        add(city_sky);
+                    
+                    var city_far:FlxSprite = new FlxSprite(-680, -220).loadGraphic(Paths.image('city-far'));
+                        city_far.antialiasing = true;
+                        city_far.setGraphicSize(Std.int(city_far.width * 0.9));
+						city_far.scrollFactor.set(0.2, 0.2);
+						city_far.active = false;
+				        add(city_far);
+                    
+                    var city_secondary:FlxSprite = new FlxSprite(-880, -60).loadGraphic(Paths.image('city-secondary'));
+                        city_secondary.antialiasing = true;
+                        city_secondary.setGraphicSize(Std.int(city_secondary.width * 1.1));
+						city_secondary.scrollFactor.set(0.3, 0.3);
+						city_secondary.active = false;
+				        add(city_secondary);
+                    
+                    var city_main:FlxSprite = new FlxSprite(-880, -60).loadGraphic(Paths.image('city-main'));
+                        city_main.antialiasing = true;
+                        city_main.setGraphicSize(Std.int(city_main.width * 1.1));
+						city_main.scrollFactor.set(0.4, 0.4);
+						city_main.active = false;
+				        add(city_main);
+                    
+                    var city_foreground:FlxSprite = new FlxSprite(-760, -220).loadGraphic(Paths.image('city-foreground'));
+                        city_foreground.antialiasing = true;
+                        city_foreground.setGraphicSize(Std.int(city_foreground.width * 0.92));
+						city_foreground.scrollFactor.set(0.6, 0.6);
+						city_foreground.active = false;
+				        add(city_foreground);
+                    
+                   var djent_corpse:FlxSprite = new FlxSprite(-700, -50).loadGraphic(Paths.image('djentbeast-broken'));
+                        djent_corpse.antialiasing = true;
+                        // djent_corpse.setGraphicSize(Std.int(city_pillar.width * 1));
+						djent_corpse.scrollFactor.set(1, 1);
+						djent_corpse.active = false;
+				        add(djent_corpse);
+                
+                    var city_pillar:FlxSprite = new FlxSprite(-300, -50).loadGraphic(Paths.image('city-pillar'));
+                        city_pillar.antialiasing = true;
+                        city_pillar.setGraphicSize(Std.int(city_pillar.width * 0.8));
+						city_pillar.scrollFactor.set(1, 1);
+						city_pillar.active = false;
+				        add(city_pillar);
+                
 
 						
 
@@ -1123,9 +1177,8 @@ class PlayState extends MusicBeatState
                 camPos.x += 600;
           case 'perfectdjent':
 				dad.x -= 100;
-                dad.y += 100;
+                camPos.x += 600;
             
-				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y-100);
 			case 'senpai-angry':
 				dad.x += 150;
 				dad.y += 360;
@@ -1186,6 +1239,10 @@ class PlayState extends MusicBeatState
 				gf.x += 500;
 				gf.y -= 20;
              case 'djent-city':
+				dad.x -= 300;
+				dad.y += 220;
+                gf.y += 1000;
+             case 'djent-city-ruined':
 				dad.x -= 300;
 				dad.y += 220;
                 gf.y += 1000;
