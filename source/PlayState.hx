@@ -685,7 +685,7 @@ class PlayState extends MusicBeatState
 							}
 						bgEscalator.scrollFactor.set(0.3, 0.3);
 						bgEscalator.active = false;
-						bgEscalator.setGraphicSize(Std.int(bgEscalator.width * 0.9));
+						bgEscalator.setGraphicSize(Std.int(bgEscalator.width * 0.8));
 						bgEscalator.updateHitbox();
 						add(bgEscalator);
 
@@ -956,40 +956,46 @@ class PlayState extends MusicBeatState
      case 'djent-city':
 				{
                     
-				defaultCamZoom = 0.6;
+				defaultCamZoom = 0.7;
 						curStage = 'djent-city';
-                    var city_sky:FlxSprite = new FlxSprite(-600, -220).loadGraphic(Paths.image('city-sky'));
+                    var city_sky:FlxSprite = new FlxSprite(-680,-60).loadGraphic(Paths.image('city-sky'));
                         city_sky.antialiasing = true;
+                        city_sky.setGraphicSize(Std.int(city_sky.width * 0.9));
 						city_sky.scrollFactor.set(0.1, 0.1);
 						city_sky.active = false;
 				        add(city_sky);
                     
-                    var city_far:FlxSprite = new FlxSprite(-600, -220).loadGraphic(Paths.image('city-far'));
+                    var city_far:FlxSprite = new FlxSprite(-680, -120).loadGraphic(Paths.image('city-far'));
                         city_far.antialiasing = true;
-						city_far.scrollFactor.set(0.3, 0.3);
+                        city_far.setGraphicSize(Std.int(city_far.width * 0.9));
+						city_far.scrollFactor.set(0.2, 0.2);
 						city_far.active = false;
 				        add(city_far);
                     
-                    var city_secondary:FlxSprite = new FlxSprite(-600, -220).loadGraphic(Paths.image('city-secondary'));
+                    var city_secondary:FlxSprite = new FlxSprite(-880, -60).loadGraphic(Paths.image('city-secondary'));
                         city_secondary.antialiasing = true;
-						city_secondary.scrollFactor.set(0.5, 0.5);
+                        city_secondary.setGraphicSize(Std.int(city_secondary.width * 1.1));
+						city_secondary.scrollFactor.set(0.3, 0.3);
 						city_secondary.active = false;
 				        add(city_secondary);
                     
-                    var city_main:FlxSprite = new FlxSprite(-600, -220).loadGraphic(Paths.image('city-main'));
+                    var city_main:FlxSprite = new FlxSprite(-880, -60).loadGraphic(Paths.image('city-main'));
                         city_main.antialiasing = true;
-						city_main.scrollFactor.set(0.6, 0.6);
+                        city_main.setGraphicSize(Std.int(city_main.width * 1.1));
+						city_main.scrollFactor.set(0.4, 0.4);
 						city_main.active = false;
 				        add(city_main);
                     
-                    var city_foreground:FlxSprite = new FlxSprite(-600, -220).loadGraphic(Paths.image('city-foreground'));
+                    var city_foreground:FlxSprite = new FlxSprite(-1200, -20).loadGraphic(Paths.image('city-foreground'));
                         city_foreground.antialiasing = true;
+                        city_foreground.setGraphicSize(Std.int(city_foreground.width * 0.8));
 						city_foreground.scrollFactor.set(1.1, 1.1);
 						city_foreground.active = false;
 				        add(city_foreground);
                 
-                    var city_pillar:FlxSprite = new FlxSprite(-600, -220).loadGraphic(Paths.image('city-pillar'));
+                    var city_pillar:FlxSprite = new FlxSprite(-300, -50).loadGraphic(Paths.image('city-pillar'));
                         city_pillar.antialiasing = true;
+                        city_pillar.setGraphicSize(Std.int(city_pillar.width * 0.8));
 						city_pillar.scrollFactor.set(1, 1);
 						city_pillar.active = false;
 				        add(city_pillar);
@@ -1025,7 +1031,7 @@ class PlayState extends MusicBeatState
 						add(stageFront);
 
 						var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains'));
-						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.8));
 						stageCurtains.updateHitbox();
 						if(FlxG.save.data.antialiasing)
 							{
@@ -1114,13 +1120,11 @@ class PlayState extends MusicBeatState
 				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
              case 'djentbeast':
 				dad.x -= 100;
-                dad.y += 100;
-                
-				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y-100);
+                camPos.x += 600;
           case 'perfectdjent':
 				dad.x -= 100;
                 dad.y += 100;
-                
+            
 				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y-100);
 			case 'senpai-angry':
 				dad.x += 150;
@@ -1183,8 +1187,9 @@ class PlayState extends MusicBeatState
 				gf.y -= 20;
              case 'djent-city':
 				dad.x -= 300;
-				dad.y -= 20;
+				dad.y += 220;
                 gf.y += 1000;
+
 		}
 
 		if (!PlayStateChangeables.Optimize)
@@ -2214,7 +2219,7 @@ class PlayState extends MusicBeatState
 						{
 							babyArrow.antialiasing = true;
 						}
-					babyArrow.setGraphicSize(Std.int(babyArrow.width * 0.7));
+					babyArrow.setGraphicSize(Std.int(babyArrow.width * 0.8));
 			}
 
 			babyArrow.updateHitbox();
@@ -3736,12 +3741,12 @@ class PlayState extends MusicBeatState
 
 			if (!curStage.startsWith('school'))
 			{
-				rating.setGraphicSize(Std.int(rating.width * 0.7));
+				rating.setGraphicSize(Std.int(rating.width * 0.8));
 				if(FlxG.save.data.antialiasing)
 					{
 						rating.antialiasing = true;
 					}
-				comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.7));
+				comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.8));
 				if(FlxG.save.data.antialiasing)
 					{
 						comboSpr.antialiasing = true;
