@@ -1005,43 +1005,74 @@ class PlayState extends MusicBeatState
 				{
                     
 				defaultCamZoom = 0.7;
-						curStage = 'djent-city-ruined';
-                    var city_sky:FlxSprite = new FlxSprite(-680,-60).loadGraphic(Paths.image('city-sky'));
+                    
+                    var waveEffectBG = new FlxWaveEffect(FlxWaveMode.ALL, 3, 0, 2, 10);
+
+                    
+                    curStage = 'djent-city-ruined';
+                    var city_sky:FlxSprite = new FlxSprite(-680,-60).loadGraphic(Paths.image('city-merged-stormy'));
                         city_sky.antialiasing = true;
                         city_sky.setGraphicSize(Std.int(city_sky.width * 0.9));
 						city_sky.scrollFactor.set(0.1, 0.1);
 						city_sky.active = false;
-				        add(city_sky);
+				        // add(city_sky);
                     
-                    var city_far:FlxSprite = new FlxSprite(-680, -220).loadGraphic(Paths.image('city-far'));
+                    var waveCitySky = new FlxEffectSprite(city_sky, [waveEffectBG]);
+                        waveCitySky.setPosition(-680, -220);
+                        waveCitySky.scrollFactor.set(0.1, 0.1);
+                        add(waveCitySky);
+                   /* 
+                    var city_far:FlxSprite = new FlxSprite(-680, -220).loadGraphic(Paths.image('city-far-stormy'));
                         city_far.antialiasing = true;
                         city_far.setGraphicSize(Std.int(city_far.width * 0.9));
 						city_far.scrollFactor.set(0.2, 0.2);
 						city_far.active = false;
-				        add(city_far);
+				        // add(city_far);
                     
-                    var city_secondary:FlxSprite = new FlxSprite(-880, -60).loadGraphic(Paths.image('city-secondary'));
+                    var waveCityFar = new FlxEffectSprite(city_far, [waveEffectBG]);
+                        waveCityFar.setPosition(-680, -220);
+                        waveCityFar.scrollFactor.set(0.2, 0.2);
+                        add(waveCityFar);
+                    
+                    var city_secondary:FlxSprite = new FlxSprite(-880, -60).loadGraphic(Paths.image('city-secondary-stormy'));
                         city_secondary.antialiasing = true;
                         city_secondary.setGraphicSize(Std.int(city_secondary.width * 1.1));
 						city_secondary.scrollFactor.set(0.3, 0.3);
 						city_secondary.active = false;
-				        add(city_secondary);
+				        // add(city_secondary);
                     
-                    var city_main:FlxSprite = new FlxSprite(-880, -60).loadGraphic(Paths.image('city-main'));
+                    var waveCitySecondary = new FlxEffectSprite(city_secondary, [waveEffectBG]);
+                        waveCitySecondary.setPosition(-880, -60);
+                        waveCitySecondary.scrollFactor.set(0.3, 0.3);
+                        add(waveCitySecondary);
+                    */
+                    var city_main:FlxSprite = new FlxSprite(-880, -60).loadGraphic(Paths.image('city-main-stormy'));
                         city_main.antialiasing = true;
                         city_main.setGraphicSize(Std.int(city_main.width * 1.1));
 						city_main.scrollFactor.set(0.4, 0.4);
 						city_main.active = false;
-				        add(city_main);
+                     
+                        var waveCityMain = new FlxEffectSprite(city_main, [waveEffectBG]);
+                        waveCityMain.setPosition(-880, -60);
+                        waveCityMain.scrollFactor.set(0.4, 0.4);
+                        add(waveCityMain);
+
+
+                    
+                   
                     
                     var city_foreground:FlxSprite = new FlxSprite(-760, -220).loadGraphic(Paths.image('city-foreground'));
                         city_foreground.antialiasing = true;
                         city_foreground.setGraphicSize(Std.int(city_foreground.width * 0.92));
 						city_foreground.scrollFactor.set(0.6, 0.6);
 						city_foreground.active = false;
+                        
 				        add(city_foreground);
                     
-                   var djent_corpse:FlxSprite = new FlxSprite(-700, -50).loadGraphic(Paths.image('djentbeast-broken'));
+                    
+                    
+                    
+                   var djent_corpse:FlxSprite = new FlxSprite(-300, 750).loadGraphic(Paths.image('djentbeast-broken'));
                         djent_corpse.antialiasing = true;
                         // djent_corpse.setGraphicSize(Std.int(city_pillar.width * 1));
 						djent_corpse.scrollFactor.set(1, 1);
