@@ -1015,13 +1015,13 @@ class PlayState extends MusicBeatState
                         city_sky.setGraphicSize(Std.int(city_sky.width * 0.9));
 						city_sky.scrollFactor.set(0.1, 0.1);
 						city_sky.active = false;
-				        // add(city_sky);
-                    
+				   //      add(city_sky);
+              
                     var waveCitySky = new FlxEffectSprite(city_sky, [waveEffectBG]);
                         waveCitySky.setPosition(-680, -220);
                         waveCitySky.scrollFactor.set(0.1, 0.1);
                         add(waveCitySky);
-                   /* 
+                         /* 
                     var city_far:FlxSprite = new FlxSprite(-680, -220).loadGraphic(Paths.image('city-far-stormy'));
                         city_far.antialiasing = true;
                         city_far.setGraphicSize(Std.int(city_far.width * 0.9));
@@ -1051,13 +1051,20 @@ class PlayState extends MusicBeatState
                         city_main.setGraphicSize(Std.int(city_main.width * 1.1));
 						city_main.scrollFactor.set(0.4, 0.4);
 						city_main.active = false;
-                     
-                        var waveCityMain = new FlxEffectSprite(city_main, [waveEffectBG]);
-                        waveCityMain.setPosition(-880, -60);
-                        waveCityMain.scrollFactor.set(0.4, 0.4);
-                        add(waveCityMain);
+                        add(city_main);
 
-
+                        
+                    var city_rain:FlxSprite = new FlxSprite(-200, -100);
+                        city_rain.antialiasing = true;
+                        city_rain.setGraphicSize(Std.int(city_rain.width * 4));
+						city_rain.scrollFactor.set(1, 1);
+						// city_rain.active = false;
+                        city_rain.frames = Paths.getSparrowAtlas('rain');
+						city_rain.animation.addByPrefix('idle', 'Raingif', 24, true);
+                        city_rain.updateHitbox();
+						city_rain.animation.play('idle');
+                   
+                        add(city_rain);
                     
                    
                     
