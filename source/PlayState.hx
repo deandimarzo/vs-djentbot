@@ -1054,10 +1054,11 @@ class PlayState extends MusicBeatState
                         add(city_main);
 
                         
-                    var city_rain:FlxSprite = new FlxSprite(-200, -100);
+                    var city_rain:FlxSprite = new FlxSprite(-300, -180);
                         city_rain.antialiasing = true;
-                        city_rain.setGraphicSize(Std.int(city_rain.width * 4));
-						city_rain.scrollFactor.set(1, 1);
+                        city_rain.scale.set(2,2);
+						city_rain.scrollFactor.set(0, 0);
+                        city_rain.alpha = 0.4;
 						// city_rain.active = false;
                         city_rain.frames = Paths.getSparrowAtlas('rain');
 						city_rain.animation.addByPrefix('idle', 'Raingif', 24, true);
