@@ -1,30 +1,39 @@
 function start(song)
-    spinLength = 0
+    djentMode = "magnet"    
 end
 
 
-function update(elapsed)
+function update (elapsed)
 
-    if difficulty == 2 and curStep > 400 then
-        if spinLength < 32 then
-            spinLength = spinLength + 0.2
-        end
+    local currentBeat = (songPos / 1000)*(bpm/60)
+    
+    -- Swirly mode
+    if djentMode == "swirly" then
+        for i=0,7 do
+            if (i < 4) then
+                -- setActorX(_G['defaultStrum2X'] + (32 * math.sin((currentBeat + i*0.25) * math.pi) * 4), i)
+                -- setActorY(_G['defaultStrum2Y'] + 32 * math.cos((currentBeat + i*0.25) * math.pi), i)
+            else
+                setActorX(_G['defaultStrum5X'] + (32 * math.sin((currentBeat + i*0.25) * math.pi) * 4), i)
+                setActorY(_G['defaultStrum5Y'] + 32 * math.cos((currentBeat + i*0.25) * math.pi), i)
+            end
 
-
-        local currentBeat = (songPos / 1000)*(bpm/60)
-	for i=0,7,1 do
-            local receptor = _G['receptor_'..i]
-            receptor.angle = (spinLength / 7) * -math.sin((currentBeat + i*0.25) * math.pi)
-	    receptor.x = receptor.defaultX + spinLength * math.sin((currentBeat + i*0.25) * math.pi)
-	    receptor.y = receptor.defaultY + spinLength * math.cos((currentBeat + i*0.25) * math.pi)
         end
     end
-end
+    
+    if djentMode == "magnet" then
+        for i=0,7 do
+            if (i < 4) then
+                -- setActorX(_G['defaultStrum2X'] + (32 * math.sin((currentBeat + i*0.25) * math.pi) * 4), i)
+                -- setActorY(_G['defaultStrum2Y'] + 32 * math.cos((currentBeat + i*0.25) * math.pi), i)
+            else
+                setActorX(_G['defaultStrum5X'], i)
+                setActorY(_G['defaultStrum5Y'], i)
+            end
 
-function playerTwoTurn()
-    camGame:tweenZoom(1.3,(crochet * 4) / 1000)
-end
+        end
+    end
+    
+    
 
-function playerOneTurn()
-    camGame:tweenZoom(1,(crochet * 4) / 1000)
 end
