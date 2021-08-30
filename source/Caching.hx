@@ -176,9 +176,9 @@ class Caching extends MusicBeatState
 
 		trace(Assets.cache.hasBitmapData('GF_assets'));
 
-		// FlxG.switchState(new TitleState());
+		FlxG.switchState(new TitleState());
         // temporarily pushing straight to freeplay while testing levels
-        FlxG.switchState(new FreeplayState());
+        // FlxG.switchState(new FreeplayState());
 	}
 
 }

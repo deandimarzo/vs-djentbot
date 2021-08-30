@@ -1015,13 +1015,13 @@ class PlayState extends MusicBeatState
                         city_sky.setGraphicSize(Std.int(city_sky.width * 0.9));
 						city_sky.scrollFactor.set(0.1, 0.1);
 						city_sky.active = false;
-				   //      add(city_sky);
-              
+				        add(city_sky);
+                 /* 
                     var waveCitySky = new FlxEffectSprite(city_sky, [waveEffectBG]);
                         waveCitySky.setPosition(-680, -220);
                         waveCitySky.scrollFactor.set(0.1, 0.1);
                         add(waveCitySky);
-                         /* 
+                      
                     var city_far:FlxSprite = new FlxSprite(-680, -220).loadGraphic(Paths.image('city-far-stormy'));
                         city_far.antialiasing = true;
                         city_far.setGraphicSize(Std.int(city_far.width * 0.9));
