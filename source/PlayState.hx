@@ -3623,19 +3623,24 @@ class PlayState extends MusicBeatState
 						FlxG.sound.play(Paths.sound('Lights_Shut_off'));
 					}
                     
-                           
-                    var video:MP4Handler = new MP4Handler();
-                    video.playMP4(Paths.video('MidScene_1'), new PlayState()); 
-/*
+
+
 					FlxTransitionableState.skipNextTransIn = true;
 					FlxTransitionableState.skipNextTransOut = true;
-*/
+
 					prevCamFollow = camFollow;
 
 					PlayState.SONG = Song.loadFromJson(poop, PlayState.storyPlaylist[0]);
 					FlxG.sound.music.stop();
+                    
+                    if (StringTools.replace(PlayState.storyPlaylist[0], " ", "-").toLowerCase() == 'does-it')  {     
+                        var video:MP4Handler = new MP4Handler();
+                        video.playMP4(Paths.video('MidScene_1'), new PlayState()); 
+                    } else {
              
-					// LoadingState.loadAndSwitchState(new PlayState());
+					LoadingState.loadAndSwitchState(new PlayState());
+                    }
+                  
 				}
 			}
 			else
