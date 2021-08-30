@@ -93,14 +93,10 @@ function update (elapsed)
                 
                 setActorX(slerp(fromX, toX, lerpVal), i)
                 setActorY(slerp(fromY, toY, lerpVal), i)
-                
-                
             end
         end
     end
     
-    -- sideways mode
-    
-    
+
 
 end
