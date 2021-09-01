@@ -1227,7 +1227,7 @@ class PlayState extends MusicBeatState
 		dad = new Character(100, 100, SONG.player2);
 
 		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
-
+        trace ("Character is '" + SONG.player2 + "'");
 		switch (SONG.player2)
 		{
 			case 'gf':
@@ -1262,14 +1262,16 @@ class PlayState extends MusicBeatState
             case 'djentbot-angry':
 				dad.y += 360;
 				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
-             case 'djentbeast':
+            case 'djentbeast':
 				dad.x -= 100;
                 camPos.x += 600;
-          case 'perfectdjent':
+            case 'perfectdjent':
 				dad.x -= 100;
                 camPos.x += 600;
-      
-            
+            case 'djentgod':
+                trace("yep it should be working");
+                dad.x -= 1800;
+                camPos.x += 600;
 			case 'senpai-angry':
 				dad.x += 150;
 				dad.y += 360;
