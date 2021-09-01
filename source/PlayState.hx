@@ -1228,6 +1228,7 @@ class PlayState extends MusicBeatState
 
 		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
         trace ("Character is '" + SONG.player2 + "'");
+        
 		switch (SONG.player2)
 		{
 			case 'gf':
@@ -1255,7 +1256,7 @@ class PlayState extends MusicBeatState
 			case 'senpai':
 				dad.x += 150;
 				dad.y += 360;
-				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+				camPos.set(dad.getGraphicMidpoint().x + 3000, dad.getGraphicMidpoint().y);
             case 'djentbot':
 				dad.y += 360;
 				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y-100);
@@ -1269,13 +1270,13 @@ class PlayState extends MusicBeatState
 				dad.x -= 100;
                 camPos.x += 600;
             case 'djentgod':
-                trace("yep it should be working");
-                dad.x -= 1800;
-                camPos.x += 600;
+            {
+                dad.x += 1200;
+                dad.y -= 600;
+            }
 			case 'senpai-angry':
 				dad.x += 150;
 				dad.y += 360;
-				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 			case 'spirit':
 				if (FlxG.save.data.distractions)
 				{
@@ -1294,7 +1295,7 @@ class PlayState extends MusicBeatState
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 		}
-
+        trace(camPos.x + ", " + camPos.y);
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
 
 		// REPOSITIONING PER STAGE
@@ -1340,10 +1341,10 @@ class PlayState extends MusicBeatState
 				dad.y += 220;
                 gf.y += 1000;
             case 'djent-end':
-                gf.x += 660;
+                gf.x += 700;
                 boyfriend.x += 300;
                 boyfriend.y -= 100;
-                dad.x -=300;
+                dad.x -= 3000;
 
 		}
 
@@ -1413,12 +1414,15 @@ class PlayState extends MusicBeatState
 		camFollow = new FlxObject(0, 0, 1, 1);
 
 		camFollow.setPosition(camPos.x, camPos.y);
-
+                
+        
 		if (prevCamFollow != null)
 		{
 			camFollow = prevCamFollow;
 			prevCamFollow = null;
 		}
+        
+        
 
 		add(camFollow);
 
@@ -2548,6 +2552,8 @@ class PlayState extends MusicBeatState
 		perfectMode = false;
 		#end
 
+        
+            
 		if (updateFrame == 4)
 			{
 				TimingStruct.clearTimings();
