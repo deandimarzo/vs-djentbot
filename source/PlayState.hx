@@ -1108,34 +1108,34 @@ class PlayState extends MusicBeatState
                 case 'djent-end':
 				{
                     
-				defaultCamZoom = 0.6;
+				defaultCamZoom = 0.3;
                     
                     
                     curStage = 'djent-end';
                     var end_sky:FlxSprite = new FlxSprite(-500,0).loadGraphic(Paths.image('end-sky'));
                         end_sky.antialiasing = true;
-                        //  end_sky.setGraphicSize(Std.int(end_sky.width * 0.9));
+                        end_sky.setGraphicSize(Std.int(end_sky.width * 2));
 						end_sky.scrollFactor.set(0, 0);
 						end_sky.active = false;
 				        add(end_sky);
                     
-                        end_cloud3 = new FlxSprite(-600,200).loadGraphic(Paths.image('end-cloud3'));
+                        end_cloud3 = new FlxSprite(-800,300).loadGraphic(Paths.image('end-cloud3'));
                         end_cloud3.antialiasing = true;
-                        // end_cloud3.setGraphicSize(Std.int(end_cloud3.width * 0.9));
+                        end_cloud3.setGraphicSize(Std.int(end_cloud3.width * 1.2));
 						end_cloud3.scrollFactor.set(0.5, 0.5);
 						end_cloud3.active = false;
 				        add(end_cloud3);
                     
-                        end_cloud2 = new FlxSprite(-600,250).loadGraphic(Paths.image('end-cloud2'));
+                        end_cloud2 = new FlxSprite(-800,300).loadGraphic(Paths.image('end-cloud2'));
                         end_cloud2.antialiasing = true;
-                        // end_cloud2.setGraphicSize(Std.int(end_cloud2.width * 0.9));
+                        end_cloud2.setGraphicSize(Std.int(end_cloud2.width * 1.2));
 						end_cloud2.scrollFactor.set(0.6, 0.6);
 						end_cloud2.active = false;
 				        add(end_cloud2);
                     
-                        end_cloud1 = new FlxSprite(-600,280).loadGraphic(Paths.image('end-cloud1'));
+                        end_cloud1 = new FlxSprite(-800,400).loadGraphic(Paths.image('end-cloud1'));
                         end_cloud1.antialiasing = true;
-                        //  end_cloud1.setGraphicSize(Std.int(end_cloud1.width * 0.9));
+                        end_cloud1.setGraphicSize(Std.int(end_cloud1.width * 1.2));
 						end_cloud1.scrollFactor.set(0.7, 0.7);
 						end_cloud1.active = false;
 				        add(end_cloud1);
@@ -1338,8 +1338,10 @@ class PlayState extends MusicBeatState
 				dad.y += 220;
                 gf.y += 1000;
             case 'djent-end':
-                gf.x += 360;
+                gf.x += 660;
+                boyfriend.x += 300;
                 boyfriend.y -= 100;
+                dad.x -=300;
 
 		}
 
@@ -2712,19 +2714,19 @@ class PlayState extends MusicBeatState
 				}
 				// phillyCityLights.members[curLight].alpha -= (Conductor.crochet / 1000) * FlxG.elapsed;
             case 'djent-end':
-                trace("we're in the endgame now");
+                // trace("we're in the endgame now");
                 end_cloud3.x -= 4;
                 end_cloud2.x -= 8;
                 end_cloud1.x -= 12;
                 
-                if (end_cloud1.x < ( -600 - (end_cloud1.frameWidth/2))) {
-                    end_cloud1.x = -600;
+                if (end_cloud1.x < ( -800 - (end_cloud1.frameWidth*1.2/2))) {
+                    end_cloud1.x = -800;
                 }
-                if (end_cloud2.x < ( -600 - (end_cloud3.frameWidth/2))) {
-                    end_cloud2.x = -600;
+                if (end_cloud2.x < ( -800 - (end_cloud2.frameWidth*1.2/2))) {
+                    end_cloud2.x = -800;
                 }
-                if (end_cloud3.x < ( -600 - (end_cloud3.frameWidth/2))) {
-                    end_cloud3.x = -600;
+                if (end_cloud3.x < ( -800 - (end_cloud3.frameWidth*1.2/2))) {
+                    end_cloud3.x = -800;
                 }
                 
                 
