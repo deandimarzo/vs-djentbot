@@ -1191,7 +1191,9 @@ class PlayState extends MusicBeatState
 		{
 			switch (storyWeek)
 			{
-				case 4:
+				case 1: 
+                    gfCheck = 'gf-demon';
+                case 4:
 					gfCheck = 'gf-car';
 				case 5:
 					gfCheck = 'gf-christmas';
@@ -1213,6 +1215,8 @@ class PlayState extends MusicBeatState
 				curGf = 'gf-christmas';
 			case 'gf-pixel':
 				curGf = 'gf-pixel';
+            case 'gf-demon':
+				curGf = 'gf-demon';
 			default:
 				curGf = 'gf';
 		}
@@ -1264,6 +1268,7 @@ class PlayState extends MusicBeatState
           case 'perfectdjent':
 				dad.x -= 100;
                 camPos.x += 600;
+      
             
 			case 'senpai-angry':
 				dad.x += 150;
@@ -1332,6 +1337,9 @@ class PlayState extends MusicBeatState
 				dad.x -= 300;
 				dad.y += 220;
                 gf.y += 1000;
+            case 'djent-end':
+                gf.x += 360;
+                boyfriend.y -= 100;
 
 		}
 
