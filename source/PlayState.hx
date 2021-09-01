@@ -209,6 +209,12 @@ class PlayState extends MusicBeatState
 	var songName:FlxText;
 	var upperBoppers:FlxSprite;
 	var bottomBoppers:FlxSprite;
+    
+    var end_cloud1:FlxSprite;
+    var end_cloud2:FlxSprite;
+    var end_cloud3:FlxSprite;
+    
+    
 	var santa:FlxSprite;
 
 	var fc:Bool = true;
@@ -1095,6 +1101,47 @@ class PlayState extends MusicBeatState
 				        add(city_pillar);
                 
 
+						
+
+				}
+    
+                case 'djent-end':
+				{
+                    
+				defaultCamZoom = 0.6;
+                    
+                    
+                    curStage = 'djent-end';
+                    var end_sky:FlxSprite = new FlxSprite(-500,0).loadGraphic(Paths.image('end-sky'));
+                        end_sky.antialiasing = true;
+                        //  end_sky.setGraphicSize(Std.int(end_sky.width * 0.9));
+						end_sky.scrollFactor.set(0, 0);
+						end_sky.active = false;
+				        add(end_sky);
+                    
+                        end_cloud3 = new FlxSprite(-600,200).loadGraphic(Paths.image('end-cloud3'));
+                        end_cloud3.antialiasing = true;
+                        // end_cloud3.setGraphicSize(Std.int(end_cloud3.width * 0.9));
+						end_cloud3.scrollFactor.set(0.5, 0.5);
+						end_cloud3.active = false;
+				        add(end_cloud3);
+                    
+                        end_cloud2 = new FlxSprite(-600,250).loadGraphic(Paths.image('end-cloud2'));
+                        end_cloud2.antialiasing = true;
+                        // end_cloud2.setGraphicSize(Std.int(end_cloud2.width * 0.9));
+						end_cloud2.scrollFactor.set(0.6, 0.6);
+						end_cloud2.active = false;
+				        add(end_cloud2);
+                    
+                        end_cloud1 = new FlxSprite(-600,280).loadGraphic(Paths.image('end-cloud1'));
+                        end_cloud1.antialiasing = true;
+                        //  end_cloud1.setGraphicSize(Std.int(end_cloud1.width * 0.9));
+						end_cloud1.scrollFactor.set(0.7, 0.7);
+						end_cloud1.active = false;
+				        add(end_cloud1);
+                    
+                    
+                
 						
 
 				}
@@ -2656,6 +2703,24 @@ class PlayState extends MusicBeatState
 					}
 				}
 				// phillyCityLights.members[curLight].alpha -= (Conductor.crochet / 1000) * FlxG.elapsed;
+            case 'djent-end':
+                trace("we're in the endgame now");
+                end_cloud3.x -= 4;
+                end_cloud2.x -= 8;
+                end_cloud1.x -= 12;
+                
+                if (end_cloud1.x < ( -600 - (end_cloud1.frameWidth/2))) {
+                    end_cloud1.x = -600;
+                }
+                if (end_cloud2.x < ( -600 - (end_cloud3.frameWidth/2))) {
+                    end_cloud2.x = -600;
+                }
+                if (end_cloud3.x < ( -600 - (end_cloud3.frameWidth/2))) {
+                    end_cloud3.x = -600;
+                }
+                
+                
+                
 		}
 
 		super.update(elapsed);
