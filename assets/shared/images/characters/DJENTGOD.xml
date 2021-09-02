@@ -1,17 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="DJENTGOD.png">
-	<!-- Created with Adobe Animate version 21.0.8.42666 -->
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="DB5_Down0000" x="0" y="0" width="2653" height="1655"/>
-	<SubTexture name="DB5_Idle0000" x="2653" y="0" width="2653" height="1644" frameX="0" frameY="0" frameWidth="2653" frameHeight="1648"/>
-	<SubTexture name="DB5_Idle0001" x="5306" y="0" width="2653" height="1644" frameX="0" frameY="0" frameWidth="2653" frameHeight="1648"/>
-	<SubTexture name="DB5_Idle0002" x="0" y="1655" width="2653" height="1644" frameX="0" frameY="0" frameWidth="2653" frameHeight="1648"/>
-	<SubTexture name="DB5_Idle0003" x="2653" y="1655" width="2653" height="1644" frameX="0" frameY="0" frameWidth="2653" frameHeight="1648"/>
-	<SubTexture name="DB5_Idle0004" x="5306" y="1655" width="2653" height="1644" frameX="0" frameY="0" frameWidth="2653" frameHeight="1648"/>
-	<SubTexture name="DB5_Idle0005" x="0" y="3299" width="2653" height="1644" frameX="0" frameY="0" frameWidth="2653" frameHeight="1648"/>
-	<SubTexture name="DB5_Idle0006" x="2653" y="3299" width="2653" height="1645" frameX="0" frameY="0" frameWidth="2653" frameHeight="1648"/>
-	<SubTexture name="DB5_Idle0007" x="5306" y="3299" width="2653" height="1645" frameX="0" frameY="0" frameWidth="2653" frameHeight="1648"/>
-	<SubTexture name="DB5_Idle0008" x="0" y="4944" width="2653" height="1646" frameX="0" frameY="0" frameWidth="2653" frameHeight="1648"/>
-	<SubTexture name="DB5_Idle0009" x="2653" y="4944" width="2653" height="1646" frameX="0" frameY="0" frameWidth="2653" frameHeight="1648"/>
-	<SubTexture name="DB5_Idle0010" x="5306" y="4944" width="2653" height="1647" frameX="0" frameY="0" frameWidth="2653" frameHeight="1648"/>
+	<SubTexture name="DB5_Down0000" x="0" y="0" width="1884" height="1142"/>
+	<SubTexture name="DB5_Down0001" x="1884" y="0" width="1884" height="1134" frameX="0" frameY="0" frameWidth="1884" frameHeight="1142"/>
+	<SubTexture name="DB5_Idle0000" x="3768" y="0" width="1885" height="1139" frameX="0" frameY="0" frameWidth="1885" frameHeight="1142"/>
+	<SubTexture name="DB5_Idle0001" x="5653" y="0" width="1885" height="1139" frameX="0" frameY="0" frameWidth="1885" frameHeight="1142"/>
+	<SubTexture name="DB5_Idle0002" x="0" y="1142" width="1885" height="1139" frameX="0" frameY="0" frameWidth="1885" frameHeight="1142"/>
+	<SubTexture name="DB5_Idle0003" x="1885" y="1142" width="1885" height="1140" frameX="0" frameY="0" frameWidth="1885" frameHeight="1142"/>
+	<SubTexture name="DB5_Idle0004" x="3770" y="1142" width="1885" height="1141" frameX="0" frameY="0" frameWidth="1885" frameHeight="1142"/>
+	<SubTexture name="DB5_Idle0005" x="5655" y="1142" width="1885" height="1141" frameX="0" frameY="0" frameWidth="1885" frameHeight="1142"/>
+	<SubTexture name="DB5_Idle0006" x="0" y="2283" width="1885" height="1142"/>
+	<SubTexture name="DB5_Idle0007" x="1885" y="2283" width="1885" height="1142"/>
+	<SubTexture name="DB5_Idle0008" x="3770" y="2283" width="1885" height="1142"/>
+	<SubTexture name="DB5_Idle0009" x="5655" y="2283" width="1885" height="1141" frameX="0" frameY="0" frameWidth="1885" frameHeight="1142"/>
+	<SubTexture name="DB5_Idle0010" x="0" y="3425" width="1885" height="1141" frameX="0" frameY="0" frameWidth="1885" frameHeight="1142"/>
+	<SubTexture name="DB5_Idle0011" x="1885" y="3425" width="1885" height="1140" frameX="0" frameY="0" frameWidth="1885" frameHeight="1142"/>
+	<SubTexture name="DB5_Left0000" x="3770" y="3425" width="1885" height="1125"/>
+	<SubTexture name="DB5_Left0001" x="5655" y="3425" width="1885" height="1125"/>
+	<SubTexture name="DB5_Right0000" x="0" y="4566" width="1884" height="1118" frameX="0" frameY="0" frameWidth="1884" frameHeight="1120"/>
+	<SubTexture name="DB5_Right0001" x="1884" y="4566" width="1884" height="1120"/>
+	<SubTexture name="DB5_Up0000" x="3768" y="4566" width="1884" height="1071" frameX="0" frameY="0" frameWidth="1884" frameHeight="1072"/>
+	<SubTexture name="DB5_Up0001" x="5652" y="4566" width="1884" height="1072"/>
 </TextureAtlas>
