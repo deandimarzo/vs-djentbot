@@ -191,42 +191,7 @@ function update (elapsed)
         djentLerp = "out"    
     end
     
-    if (targetBeat == 288) then
-        djentMode = "magnet"  
-    end
-    if (targetBeat == 292) then
-        djentMode = "crazy"  
-    end
-    if (targetBeat == 296) then
-        djentLerp = "out"    
-    end
     
-    if (targetBeat == 300) then
-         djentMode = "swirly"
-    end
-    if (targetBeat == 304) then
-         djentLerp = "out"   
-    end
-    if (targetBeat == 305) then
-        djentMode = "crazy"
-        djentLerp = "in"    
-    end
-    if (targetBeat == 311) then
-         djentLerp = "out"   
-    end
-    if (targetBeat == 312) then
-         djentMode = "magnet"
-    end
-    if (targetBeat == 315) then
-         djentLerp = "out"   
-    end
-    if (targetBeat == 316) then
-        djentMode = "crazy"
-        djentLerp = "in"    
-    end
-    if (targetBeat == 321) then
-         djentLerp = "out"   
-    end
     
     
     -- lerp behavior

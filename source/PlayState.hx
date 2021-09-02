@@ -1016,7 +1016,7 @@ class PlayState extends MusicBeatState
 
                     
                     curStage = 'djent-city-ruined';
-                    var city_sky:FlxSprite = new FlxSprite(-680,-60).loadGraphic(Paths.image('city-merged-stormy'));
+                    var city_sky:FlxSprite = new FlxSprite(-680,-360).loadGraphic(Paths.image('city-merged-stormy'));
                         city_sky.antialiasing = true;
                         city_sky.setGraphicSize(Std.int(city_sky.width * 0.9));
 						city_sky.scrollFactor.set(0.1, 0.1);
