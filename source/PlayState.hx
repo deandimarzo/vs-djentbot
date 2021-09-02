@@ -1336,10 +1336,16 @@ class PlayState extends MusicBeatState
 				dad.x -= 300;
 				dad.y += 220;
                 gf.y += 1000;
+                boyfriend.x -= 100;
+                boyfriend.y -= 100;
+                boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.5));
              case 'djent-city-ruined':
 				dad.x -= 300;
 				dad.y += 220;
+                boyfriend.x -= 100;
+                boyfriend.y -= 100;
                 gf.y += 1000;
+                boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.5));
             case 'djent-end':
                 gf.x += 370;
                 boyfriend.y -= 200;
