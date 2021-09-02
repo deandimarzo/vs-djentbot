@@ -533,11 +533,11 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHT', 'DB5_Right', 24);
 				animation.addByPrefix('singDOWN', 'DB5_Down', 24);
 				animation.addByPrefix('singLEFT', 'DB5_Left', 24);
-                addOffset('idle',700,0);
-				addOffset("singUP",700,0);
-				addOffset("singRIGHT",700,0);
-				addOffset("singLEFT",700,0);
-				addOffset("singDOWN",700,0);
+                addOffset('idle',500,0);
+				addOffset("singUP",500,0);
+				addOffset("singRIGHT",500,0);
+				addOffset("singLEFT",500,0);
+				addOffset("singDOWN",500,0);
                 
                 
 				playAnim('idle');

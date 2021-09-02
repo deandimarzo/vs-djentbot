@@ -27,7 +27,7 @@ class StoryMenuState extends MusicBeatState
 	static function weekData():Array<Dynamic>
 	{
 		return [
-			['Sideways', 'Does It', 'Crazy', 'Dog Gods']
+			['Sideways', 'Does It', 'Crazy', 'Dog Gods', 'TTFAF']
 		];
 	}
 	var curDifficulty:Int = 1;
@@ -465,8 +465,12 @@ class StoryMenuState extends MusicBeatState
 		var stringThing:Array<String> = weekData()[curWeek];
 
 		for (i in stringThing)
-			txtTracklist.text += "\n" + i;
-
+        {
+            if (i != "TTFAF") 
+            { 
+                txtTracklist.text += "\n" + i; 
+            }
+        }
 		txtTracklist.text = txtTracklist.text.toUpperCase();
 
 		txtTracklist.screenCenter(X);

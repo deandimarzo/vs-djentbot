@@ -1,5 +1,5 @@
 Sideways:djentbot:1
-Does It:djentbot:1
-Crazy:djentbot:1
-Dog Gods:djentbot:1
-TTFAF:djentbot:1
+Does It:djentbot-angry:1
+Crazy:djentbeast:1
+Dog Gods:perfectdjent:1
+TTFAF:djentgod:1
