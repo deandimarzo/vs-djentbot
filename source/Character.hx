@@ -528,7 +528,7 @@ class Character extends FlxSprite
                 case 'djentgod':
 			tex = Paths.getSparrowAtlas('characters/DJENTGOD', 'shared');
 				frames = tex;
-				animation.addByPrefix('idle', 'DB5_Idle', 48);
+				animation.addByPrefix('idle', 'DB5_Idle', 16);
 				animation.addByPrefix('singUP', 'DB5_Up', 24);
 				animation.addByPrefix('singRIGHT', 'DB5_Right', 24);
 				animation.addByPrefix('singDOWN', 'DB5_Down', 24);
