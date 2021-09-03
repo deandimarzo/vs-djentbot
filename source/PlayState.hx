@@ -1119,21 +1119,21 @@ class PlayState extends MusicBeatState
 						end_sky.active = false;
 				        add(end_sky);
                     
-                        end_cloud3 = new FlxSprite(-800,300).loadGraphic(Paths.image('end-cloud3'));
+                        end_cloud3 = new FlxSprite(-1000,300).loadGraphic(Paths.image('end-cloud3'));
                         end_cloud3.antialiasing = true;
                         end_cloud3.setGraphicSize(Std.int(end_cloud3.width * 1.2));
 						end_cloud3.scrollFactor.set(0.5, 0.5);
 						end_cloud3.active = false;
 				        add(end_cloud3);
                     
-                        end_cloud2 = new FlxSprite(-800,300).loadGraphic(Paths.image('end-cloud2'));
+                        end_cloud2 = new FlxSprite(-1000,300).loadGraphic(Paths.image('end-cloud2'));
                         end_cloud2.antialiasing = true;
                         end_cloud2.setGraphicSize(Std.int(end_cloud2.width * 1.2));
 						end_cloud2.scrollFactor.set(0.6, 0.6);
 						end_cloud2.active = false;
 				        add(end_cloud2);
                     
-                        end_cloud1 = new FlxSprite(-800,400).loadGraphic(Paths.image('end-cloud1'));
+                        end_cloud1 = new FlxSprite(-1000,480).loadGraphic(Paths.image('end-cloud1'));
                         end_cloud1.antialiasing = true;
                         end_cloud1.setGraphicSize(Std.int(end_cloud1.width * 1.2));
 						end_cloud1.scrollFactor.set(0.7, 0.7);
@@ -2737,14 +2737,14 @@ class PlayState extends MusicBeatState
                 end_cloud2.x -= 8;
                 end_cloud1.x -= 12;
                 
-                if (end_cloud1.x < ( -800 - (end_cloud1.frameWidth*1.2/2))) {
-                    end_cloud1.x = -800;
+                if (end_cloud1.x < ( -1000 - (end_cloud1.frameWidth*1.2/2))) {
+                    end_cloud1.x = -1000;
                 }
-                if (end_cloud2.x < ( -800 - (end_cloud2.frameWidth*1.2/2))) {
-                    end_cloud2.x = -800;
+                if (end_cloud2.x < ( -1000 - (end_cloud2.frameWidth*1.2/2))) {
+                    end_cloud2.x = -1000;
                 }
-                if (end_cloud3.x < ( -800 - (end_cloud3.frameWidth*1.2/2))) {
-                    end_cloud3.x = -800;
+                if (end_cloud3.x < ( -1000 - (end_cloud3.frameWidth*1.2/2))) {
+                    end_cloud3.x = -1000;
                 }
                 
                 
