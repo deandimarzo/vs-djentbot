@@ -48,7 +48,7 @@ class MP4Handler
         
         vlcBitmap.onVideoReady = onVLCVideoReady;
 		vlcBitmap.onComplete = onVLCComplete;
-		vlcBitmap.volume = FlxG.sound.volume;
+		vlcBitmap.volume = FlxG.sound.volume * 0.6;
         
 		if (repeat)
 			vlcBitmap.repeat = -1;

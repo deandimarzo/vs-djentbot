@@ -1108,7 +1108,7 @@ class PlayState extends MusicBeatState
                 case 'djent-end':
 				{
                     
-				defaultCamZoom = 0.3;
+				defaultCamZoom = 0.5;
                     
                     
                     curStage = 'djent-end';
@@ -1119,21 +1119,21 @@ class PlayState extends MusicBeatState
 						end_sky.active = false;
 				        add(end_sky);
                     
-                        end_cloud3 = new FlxSprite(-1000,300).loadGraphic(Paths.image('end-cloud3'));
+                        end_cloud3 = new FlxSprite(-1000,200).loadGraphic(Paths.image('end-cloud3'));
                         end_cloud3.antialiasing = true;
                         end_cloud3.setGraphicSize(Std.int(end_cloud3.width * 1.2));
 						end_cloud3.scrollFactor.set(0.5, 0.5);
 						end_cloud3.active = false;
 				        add(end_cloud3);
                     
-                        end_cloud2 = new FlxSprite(-1000,300).loadGraphic(Paths.image('end-cloud2'));
+                        end_cloud2 = new FlxSprite(-1000,200).loadGraphic(Paths.image('end-cloud2'));
                         end_cloud2.antialiasing = true;
                         end_cloud2.setGraphicSize(Std.int(end_cloud2.width * 1.2));
 						end_cloud2.scrollFactor.set(0.6, 0.6);
 						end_cloud2.active = false;
 				        add(end_cloud2);
                     
-                        end_cloud1 = new FlxSprite(-1000,480).loadGraphic(Paths.image('end-cloud1'));
+                        end_cloud1 = new FlxSprite(-1000,380).loadGraphic(Paths.image('end-cloud1'));
                         end_cloud1.antialiasing = true;
                         end_cloud1.setGraphicSize(Std.int(end_cloud1.width * 1.2));
 						end_cloud1.scrollFactor.set(0.7, 0.7);
@@ -1336,24 +1336,23 @@ class PlayState extends MusicBeatState
 				dad.x -= 300;
 				dad.y += 220;
                 gf.y += 1000;
-                boyfriend.x -= 100;
-                boyfriend.y -= 100;
-                boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.5));
+                boyfriend.x += 75;
+                // boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.5));
              case 'djent-city-ruined':
 				dad.x -= 300;
 				dad.y += 220;
-                boyfriend.x -= 100;
-                boyfriend.y -= 100;
+                boyfriend.x += 75;
                 gf.y += 1000;
-                boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.5));
+                // boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.5));
             case 'djent-end':
-                gf.x += 370;
+                gf.x -= 330;
+                boyfriend.x -= 700;
                 boyfriend.y -= 200;
                 dad.x -= 3000;
                 gf.scrollFactor.set(1, 1);
                 
-                boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.5));
-                gf.setGraphicSize(Std.int(gf.width * 0.5));
+                // boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.5));
+                // gf.setGraphicSize(Std.int(gf.width * 0.5));
                 
 
 		}
@@ -3716,9 +3715,28 @@ class PlayState extends MusicBeatState
 						FlxG.sound.play(Paths.sound('Lights_Shut_off'));
 					}
                     
-                           
-                    var video:MP4Handler = new MP4Handler();
-                    video.playMP4(Paths.video('MidScene_1'), new PlayState()); 
+                    if (StringTools.replace(PlayState.storyPlaylist[0], " ", "-").toLowerCase() == 'does-it')
+                    {
+                        var video:MP4Handler = new MP4Handler();
+                        video.playMP4(Paths.video('MidScene_1'), new PlayState()); 
+                    }
+                    if (StringTools.replace(PlayState.storyPlaylist[0], " ", "-").toLowerCase() == 'crazy')
+                    {
+                        var video:MP4Handler = new MP4Handler();
+                        video.playMP4(Paths.video('MidScene_2'), new PlayState()); 
+                    }
+                    if (StringTools.replace(PlayState.storyPlaylist[0], " ", "-").toLowerCase() == 'dog-gods')
+                    {
+                        var video:MP4Handler = new MP4Handler();
+                        video.playMP4(Paths.video('MidScene_3'), new PlayState()); 
+                    }
+                    if (StringTools.replace(PlayState.storyPlaylist[0], " ", "-").toLowerCase() == 'ttfaf')
+                    {
+                        var video:MP4Handler = new MP4Handler();
+                        video.playMP4(Paths.video('MidScene_4'), new PlayState()); 
+                    }
+                    
+                    
 /*
 					FlxTransitionableState.skipNextTransIn = true;
 					FlxTransitionableState.skipNextTransOut = true;
